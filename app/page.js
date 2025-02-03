@@ -2,6 +2,7 @@ import { Itim } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import About from "./components/About";
+import Education from "./components/Education";
 
 export default function Home() {
 
@@ -47,11 +48,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-        
+
         <div>
           <About />
         </div>
-
+        <div>
+          <Education />
+        </div>
       </div>
     </>
   );

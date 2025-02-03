@@ -4,7 +4,7 @@ import React from 'react';
 const About = () => {
   return (
     <>
-      <section className="bg-[#f8f9fa] min-h-[60vh] w-[70vw] mx-auto my-6 shadow-xl flex justify-center items-center">
+      <section className="bg-[#f8f9fa] min-h-[60vh] w-[70vw] mx-auto my-[15vh] shadow-xl flex justify-center items-center">
         <div className='bg-white min-h-[50vh] w-[65vw] shadow-xl mx-auto my-8 p-8 rounded-lg'>
           <div className="flex items-center gap-2 mb-6">
             <div className="h-[3px] w-[7vw] bg-indigo-600"></div>
