@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import About from "./components/About";
 import Education from "./components/Education";
-
+import Skill from "./components/Skill";
 export default function Home() {
 
   const acounts = {
@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <>
       <div className=" ">
-        <div className=" pt-9 grid grid-cols-2 h-[100vh] items-center bg-[#f7f7f7]">
+        <div className=" pt-9 grid grid-cols-2 h-[100vh] items-center bg-[#f7f7f7] shadow-2xl">
           <div className="flex flex-col items-center justify-center ">
             <div className="">
               <h3 className="text-xl m-2">Hello! I am</h3>
@@ -43,18 +43,16 @@ export default function Home() {
           </div>
 
           <div className="">
-            <div className="flex justify-center">
+            <div className="flex justify-center ">
               <Image width="530" height="530" className="rounded-full shadow-2xl  " src="/person.png" alt="" />
             </div>
           </div>
         </div>
+        <About />
+        <Education />
+        
+        <Skill />
 
-        <div>
-          <About />
-        </div>
-        <div>
-          <Education />
-        </div>
       </div>
     </>
   );

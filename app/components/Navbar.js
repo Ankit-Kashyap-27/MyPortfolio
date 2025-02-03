@@ -4,7 +4,7 @@ const Navbar = () => {
 
   const a = ["Home", "About", "Education", "Skill"]
   return (
-    <nav className='flex justify-center '>
+    <nav className='flex justify-center  '>
       <div className=' bg-white shadow-lg  flex  justify-between w-[85vw] m-5 rounded-full fixed  '>
         <div className='flex items-center pl-10'>
           <Image width={80} height={80} src="/logo.png" alt="logo" />

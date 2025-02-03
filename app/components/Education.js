@@ -21,19 +21,19 @@ const Education = () => {
     const educations = ["Highschool", "Seniorsecondary", "BCA"];
 
     return (
-        <section className='bg-[#f3f4f6] p-9    '>
+        <section className='bg-[#f3f4f6] py-2  shadow-xl   '>
             <div className=' flex justify-center  '>
                 <h2 className='text-4xl text-indigo-600 font-extrabold my-[5vh] '>Education</h2>
             </div>
-            <div className=' flex flex-wrap items-center justify-center '>
+            <div className=' flex flex-wrap  items-center justify-center '>
                 {
                     educations.map((item, index) => (
-                        <div key={index} className=" rounded-lg bg-[#f8f9fa] shadow-xl  flex items-center flex-col m-8 px-[5vw] py-[5vh] ">
+                        <div key={index} className="hover:scale-105 hover:bg-blue-50 duration-500 rounded-lg bg-[#f8f9fa] shadow-xl  flex items-center flex-col m-8 px-[5vw] py-[5vh] ">
                             <div className="flex items-center gap-4">
                                 <div className="h-[.4vh] w-[6vw] bg-indigo-600"></div>
                                 <h3 className='text-indigo-600 font-bold text-2xl'>{institutes[item]}</h3>
                             </div>
-                            <p className='text-gray-700 m-2'>Years: {years[item]}</p>
+                            <p className='text-gray-700 my-2 m-2'>Years: {years[item]}</p>
                             <p className='text-gray-700 m-2'>Board: {board[item]}</p>
                         </div>
                     ))
