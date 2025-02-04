@@ -1,5 +1,5 @@
-import { Itim } from "next/font/google";
-import Image from "next/image";
+"use client"
+import React, { useRef, useState, useEffect } from 'react'
 import Link from "next/link";
 import About from "./components/About";
 import Education from "./components/Education";
@@ -16,41 +16,42 @@ export default function Home() {
 
   const socialMediaPlatforms = ['facebook', 'twitter', 'linkedin', 'github', 'instagram'];
 
+
+
+
   return (
     <>
       <div className=" ">
-        <div className=" pt-9 grid grid-cols-2 h-[100vh] items-center bg-[#f7f7f7] shadow-2xl">
+        <div className=" pt-9 grid md:grid-cols-2 h-[100vh] md:h-[100vh] items-center bg-[#f7f7f7] shadow-2xl">
           <div className="flex flex-col items-center justify-center ">
-            <div className="">
-              <h3 className="text-xl m-2">Hello! I am</h3>
-              <h1 className="text-5xl relative left-16 m-2">Ankit Kashyap</h1>
-              <h2 className="text-2xl  m-2">A  Passionate  Developer.</h2>
-              <h2 className="text-xl  m-2">Creating web applications using modern technologies.</h2>
+            <div className="ml-4 md:mt-[2vh] mt-[22vh] ">
+              <h3 className="text-xl  m-3">Hello! I am</h3>
+              <h1 className="md:text-5xl text-4xl relative left-16 md:m-2">Ankit Kashyap</h1>
+              <h2 className="text-2xl  m-5">A  Passionate  Developer.</h2>
+              <h2 className="text-xl  m-5">Creating web applications using modern technologies.</h2>
             </div>
-            <div className=" w-[30vw] h-[10vh] justify-center   flex items-center" >
-              <div className="w-[5vw] h-[.2vh] bg-black m-1"></div>
-              <div className=" flex gap-5">
-                {socialMediaPlatforms.map((item, index) => (<Link target="_blank" key={index} href={acounts[item]} className="">
-                  <img width={30} className=" rounded-md border duration-300 shadow-lg hover:shadow-2xl  hover:-translate-y-1" src={`/${item}.svg`} alt={item} />
+            <div className="    justify-center mt-[5vh]    flex items-center" >
+              <div className="md:w-[5vw] w-[10vw]  h-[.2vh] bg-black m-1"></div>
+              <div className=" flex  gap-2 md:gap-5">
+                {socialMediaPlatforms.map((item, index) => (<Link target="_blank"  key={index} href={acounts[item]} >
+                  <img  className="  w-[10vw] sm:w-[6vw]  md:w-[4vw] lg:w-[3vw] xl:w-[2vw] rounded-md border duration-300 shadow-lg hover:shadow-2xl  hover:-translate-y-1" src={`/${item}.svg`} alt={item} />
                 </Link>
                 ))
-
                 }
-
               </div>
-              <div className="w-[5vw] h-[.2vh] bg-black m-1"></div>
+              <div className="md:w-[5vw] w-[10vw]  h-[.2vh] bg-black m-1"></div>
             </div>
           </div>
 
           <div className="">
             <div className="flex justify-center ">
-              <Image width="530" height="530" className="rounded-full shadow-2xl  " src="/person.png" alt="" />
+              <img width="530" height="530" className=" opacity-0 md:opacity-100 rounded-full shadow-2xl  " src="/person.png" alt="" />
             </div>
           </div>
         </div>
         <About />
         <Education />
-        
+
         <Skill />
 
       </div>
