@@ -28,7 +28,7 @@ const Education = () => {
             <div className=' flex flex-wrap  items-center justify-center '>
                 {
                     educations.map((item, index) => (
-                        <div key={index} className="hover:scale-105 hover:bg-blue-50 duration-500 rounded-lg bg-[#f8f9fa] shadow-xl  flex items-center flex-col m-4 md:m-8 px-[5vw] py-[2vh] md:py-[5vh] ">
+                        <div key={index} className="hover:scale-105 hover:bg-blue-50 duration-500 rounded-lg bg-[#f8f9fa] shadow-xl  flex items-center flex-col m-4 md:m-8 px-[3vw] py-[2vh] md:py-[5vh] ">
                             <div className="flex items-center gap-4">
                                 <div className="h-[.4vh] w-[6vw] bg-indigo-600"></div>
                                 <h3 className='text-indigo-600 font-bold text-2xl'>{institutes[item]}</h3>
