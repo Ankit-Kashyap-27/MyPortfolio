@@ -21,7 +21,7 @@ const Education = () => {
     const educations = ["Highschool", "Seniorsecondary", "BCA"];
 
     return (
-        <section className='bg-[#f3f4f6] py-2  shadow-xl  p-8 '>
+        <section className='bg-[#f3f4f6] py-2  shadow-xl  my-2 '>
             <div className=' flex justify-center  '>
                 <h2 className='md:text-4xl text-2xl text-indigo-600 font-extrabold md:my-[5vh] mt-[5vh] '>Education</h2>
             </div>

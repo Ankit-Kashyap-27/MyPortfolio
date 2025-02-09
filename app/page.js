@@ -27,7 +27,7 @@ export default function Home() {
   }, []);
 
   return (
-    <>
+    <div className='overflow-hidden w-[100vw]'>
       <nav className='flex justify-center'>
         <div className='bg-white shadow-lg flex justify-between w-[85vw] m-5 rounded-full top-0 fixed z-50'>
           <div className='flex items-center pl-2 md:pl-10'>
@@ -90,6 +90,6 @@ export default function Home() {
           <Skill />
         </div>
       </div>
-    </>
+    </div>
   );
 }
